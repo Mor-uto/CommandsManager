@@ -1,7 +1,11 @@
 # CommandsManager
 a bukkit/spigot CommandsManager to make it easy when making commands
 
-# Usage
+## Registration
+
+just make a `new CommandsManager(this);` in your main plugin's class in the onEnable method
+
+## Usage
 
 make a new class that extends Command class provided in this code
 then implement the execute method thats required for the thing to work
