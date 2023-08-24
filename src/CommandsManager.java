@@ -2,11 +2,12 @@ public class CommandsManager {
     public final ArrayList<Class<? extends Command>> commands = new ArrayList<>();
     private final JavaPlugin plugin;
 
+    public void registerCommand(String name, Class<? extends Command> clazz) {
+        commands.put(name, clazz);
+    }
+    
     public CommandsManager(final JavaPlugin plugin) {
         this.plugin = plugin;
-
-        //here do commands.add(YourCommand.class);
-
         manageCommands();
     }
 
