@@ -28,7 +28,9 @@ public class test extends Command {
 }
 ```
 
-## whats sendMessageBranded?
+## Command Utils
+
+`sendMessageBranded`
 
 its a method for commands only that provides u with a color translator
 so u use it like this
