@@ -3,6 +3,8 @@ public abstract class Command implements CommandExecutor {
 
     public Command() {
         this.name = getClass().getAnnotation(CommandInfo.class).name();
+
+        if (name == null || name == "") name = getClass().getName().toLowerCase();
     }
 
     public abstract void execute(Player player, String[] args);
